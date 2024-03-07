@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Rotation</title>
+  <style>
+    .container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    #rotatable-image {
+      width: 200px;
+      /* Adjust the width of the image */
+      height: auto;
+      /* Maintains aspect ratio */
+      transition: transform 0.5s ease-in-out;
+      /* Adds smooth transition */
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <script>
+    function rotateImage() {
+      var image = document.getElementById('rotatable-image');
+      var currentRotation = image.style.transform || 'rotate(0deg)';
+      var rotationValue = parseInt(currentRotation.replace('rotate(', '').replace('deg)', '')) + 90;
+      image.style.transform = 'rotate(' + rotationValue + 'deg)';
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <img src="./surya.jpeg" alt="Rotatable Image" id="rotatable-image">
+    <button onclick="rotateImage()">Rotate Image</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

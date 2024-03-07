@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>music</title>
+  <style>
+    .music-beat ul{
+      text-align: center;
+      position: relative;
+      margin-top: 490px;
+    }
+    .music-beat ul li{
+      list-style: none;
+      height: 80px;
+      width: 5px;
+      transform-origin: bottom;
+      position: relative;
+      border-radius: 10px;
+      line-height: 0.70em;
+      display: inline-block;
+      margin: 0 7px;
+      background: linear-gradient(315deg, #000 3px, #fff 0%, #32d309c5);
+      box-shadow: 0 0 20px #0a0961, 0 0 50px #fff, 0 0 60px #fff, 0 0 150px #fff;
+      -webkit-box-reflect: below 1px linear-gradient(transparent), rgb(104, 3, 3, 0.267);
+      animation: beat 1.5s linear infinite;
+    }
+    @keyframes beat{
+      0%{
+        transform: scaleY(0);
+      }
+      50%{
+        transform: scaleY(1);
+      }
+      100%{
+        transform: scaleY(0.7);
+      }
+    }
+    .music-beat ul li:nth-child(1){
+      animation-delay: 0.2s;
+      height: 20px;
+    }
+    .music-beat ul li:nth-child(2){
+      animation-delay: 0.4s;
+      height: 40px;
+    }
+    .music-beat ul li:nth-child(4){
+      animation-delay: 0.3s;
+    }
+    .music-beat ul li:nth-child(6){
+      animation-delay: 0.2s;
+    }
+    .music-beat ul li:nth-child(7){
+      animation-delay: 0.5s;
+      height: 70px;
+    }
+    .music-beat ul li:nth-child(8){
+      animation-delay: 0.4s;
+      height: 80px;
+    }
+    .music-beat ul li:nth-child(9){
+      animation-delay: 0.6s;
+      height: 70px;
+    }
+    .music-beat ul li:nth-child(10){
+      animation-delay: 0.3s;
+    }
+    .music-beat ul li:nth-child(11){
+      animation-delay: 0.4s;
+    }
+    .music-beat ul li:nth-child(12){
+      animation-delay: 0.2s;
+      height: 20px;
+    }
+    .music-beat ul li:nth-child(13){
+      animation-delay: 0.3s;
+      height: 40px;
+    }
+    .music-beat ul li:nth-child(14){
+      animation-delay: 0.2s;
+      height: 50px;
+    }
+    .music-beat ul li:nth-child(15){
+      animation-delay: 0.4s;
+      height: 60px;
+    }
+  </style>
+</head>
+<body style="background-image: url(./guitar.jpeg);">
+  <img src="./surya.jpeg" width="350px" style="margin-left: 650px; margin-bottom: -400px;">
+  <img src="./line.png" style="margin-bottom: -550px; margin-left: -320px;">
+  <h2 style="color: rgb(213, 19, 19); text-align: center;">Surya Son of Krishnan</h2>
+  <div class="music-beat">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</body>
+</html>

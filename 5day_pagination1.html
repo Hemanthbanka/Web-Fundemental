@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    /* display: flex; */
+    justify-content: center;
+    background-color: whitesmoke;
+  }
+
+  nav {
+    position: relative;
+    width: 800px;
+    height: 50px;
+    background: #34495e;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0 25px;
+    font-size: 1em;
+    font-weight: 500;
+    z-index: 1;
+    /* margin-right: 400px; */
+  }
+
+  nav span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background: linear-gradient(45deg, #bc1a1a, #2c3e50);
+    border-radius: 8px;
+    transition: .5s;
+  }
+
+  nav a:nth-child(1):hover~span {
+    left: 0;
+    width: 50px;
+  }
+
+  nav a:nth-child(2):hover~span {
+    left: 100px;
+    width: 170px;
+  }
+
+  nav a:nth-child(3):hover~span {
+    left: 250px;
+    width: 160px;
+  }
+
+  nav a:nth-child(4):hover~span {
+    left: 400px;
+    width: 150px;
+  }
+
+  nav a:nth-child(5):hover~span {
+    left: 540px;
+    width: 130px;
+  }
+
+  nav a:nth-child(6):hover~span {
+    left: 650px;
+    width: 150px;
+  }
+    h1{
+      padding: 20px;
+      background-color: red;
+      color: whitesmoke;
+    }
+    
+    table {
+      width: 200px;
+      /* Adjust width as needed */
+      border-collapse: collapse;
+      display: inline-block;
+    }
+
+    td, tr {
+      text-align: center;
+      padding: 10px;
+      display: inline-block;
+    }
+
+    img {
+      width: 100%;
+      height: 180%;
+      transition: transform 0.5s ease-in-out;
+      border-radius: 100px;
+      margin-top: -10%;
+    }
+
+    .image-name {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: red;
+      border-radius: 50px;
+      color: whitesmoke;
+      font-weight: 800;
+    }
+
+    td:hover img {
+      transform: rotate(360deg);
+    }
+    p:hover .image-name{
+      transform: rotate(360deg);
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>
+        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+          alt="Image description">
+        <p class="image-name">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</p>
+      </td>
+    </tr>
+  </table>
+  <table class="sec">
+    <tr>
+      <td>
+        <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+          alt="Image description">
+        <p class="image-name">Mens Casual Premium Slim Fit T-Shirts</p>
+      </td>
+    </tr>
+  </table>
+  <table class="third">
+    <tr>
+      <td>
+        <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
+          alt="Image description">
+        <p class="image-name">Mens Cotton Jacket</p>
+      </td>
+    </tr>
+  </table>
+  <table class="fourth">
+    <tr>
+      <td>
+        <img src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
+          alt="Image description">
+        <p class="image-name">Mens Casual Slim Fit</p>
+      </td>
+    </tr>
+  </table>
+  <nav style="display: flex;">
+    <a href="#">Profile</a>
+    <a href="#">career object</a>
+    <a href="#">Qualification</a>
+    <a href="#">Technical Skills</a>
+    <a href="#">Hobbies</a>
+    <a href="#">Declaration</a>
+    <span></span>
+  </nav><br>
+</body>
+</html>
